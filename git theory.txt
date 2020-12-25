@@ -35,3 +35,13 @@ but if want to ignore only outer file the user /reponame/ in .gitignore.
 you can also specify the path like static/image.
 so .gitignore can be complex also. Try it your own.
 git add . --> try to fine this
+git diff--> Difference between stagging area and working repo.
+git diff --staged--> Dfference between stagging area and previous commit.
+git commit -a -m "message"--> commit only the tracked file by skipping the stagging area.
+trak file means thos file which are not new added or a file which has been sent to staged area before this anytime.
+If you have add a new file then at least add that file in stazed area at once or start tracking hte file.
+pagger--> when we do git log we can see all commit in page wise that is called git pagger which can be exit by typing q only
+git rm filenameWith Extension--> to remove the file and also adding them to stazing area i.e we don't need to add them in stazing area explicitly. Directly you can do commit.
+git mv oldfilename newfilename--> rename the file and add to stagging area also. ready to commit
+git rm --cached filenamewithextension--> to make the file untrack. if you a file in .gitignore then make sure that is not track by git befor. if track then remove from tracking.
+tracking start once we put a file in staging area.
