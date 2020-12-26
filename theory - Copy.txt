@@ -1,0 +1,61 @@
+git bash is a linux based command line tool.
+pwd->present working dir
+ls->list all dir and file in that dir
+cd dir_name/ --> to enter that dir
+
+
+git--> command line tool for cmd,power shell and git bash
+pwd--> for git bash(present working directory)
+git config --global user.name "Alok" --> Setting the user name globally
+git config --global user.email "thealokraj16@gmail.com" --> Setting the user email id.
+git config --list --> to get the list of all configration value
+git config --global core.editor vim--> setting the viw editor but work in linux only.
+git status -->check the status of git repo.
+git init --> Initializating a repo to a git repo(first step)
+git add --a --> To put all file in the stazing area at a time.
+git commit --> commit the all file in stagging area without any message
+git commit -m "you message" -> commit the all file in staging area with your meaage.
+git log --> To check all logs of current repo.
+git add file_name _with_extension --> To add that particular file in stagging area.
+rm -rf .git --> this will delete the .git hidden repo due to which our repo will no lognner is  a git repo.
+becauge git init make a .git repo which make a repo to git repo.
+clonning a github repo
+go to github and copy the link and bake to your dir
+git clone you_copy_url_from_github youname_to_repo(optional)--> this will make
+git submodule add <url> you_name--> to add a naother git repo inside a  git repo as a submodule.
+.gitignore --> if you name a file in this file with extension then that file will not be track by git anymore.
+but you have to track the .gitignore file. so keep this in mind.
+If you have multiple simle extenion file which have to ignaore then instead of adding each of them in .gitignore file simply write *.extension to ignore all the file.here * means all
+and if you have some other extension also you can add them manually also but try to ignore similar extension file by *.extension.
+If you want ot ignore a directory then simply in .gitignore file add directory_name/ to ignore that particule director and all the files in that directory.
+git by difault ignore the blank repo. keep this in mind. 
+*.extenion in .gitignore will ignore that extension file in any repo.
+the same rule apply for reponame/ in .gitignore file.
+but if want to ignore only outer file the user /reponame/ in .gitignore.
+you can also specify the path like static/image.
+so .gitignore can be complex also. Try it your own.
+git add . --> try to fine this
+git diff--> Difference between stagging area and working repo.
+git diff --staged--> Dfference between stagging area and previous commit.
+git commit -a -m "message"--> commit only the tracked file by skipping the stagging area.
+trak file means thos file which are not new added or a file which has been sent to staged area before this anytime.
+If you have add a new file then at least add that file in stazed area at once or start tracking hte file.
+pagger--> when we do git log we can see all commit in page wise that is called git pagger which can be exit by typing q only
+git rm filenameWith Extension--> to remove the file and also adding them to stazing area i.e we don't need to add them in stazing area explicitly. Directly you can do commit.
+git mv oldfilename newfilename--> rename the file and add to stagging area also. ready to commit
+git rm --cached filenamewithextension--> to make the file untrack. if you a file in .gitignore then make sure that is not track by git befor. if track then remove from tracking.
+tracking start once we put a file in staging area.
+git log -p--> logs with ditails of changes
+git log -p -2--> only two log with details of changes
+git log -2--> only two log 
+git log --stat-->logs with ditails of changes in short
+git log --pretty=oneline--> all hash value with commit message
+git log --pretty=short--> all hash value with commit message and author name
+git log --pretty=full-->all hash value with commit message and author name and who has done the commit.
+author is one who has creted the file and commit is one who has changed the file.
+git log --since=2.days--> last two days log only.
+git log --since=2.months--> last two months log only.
+git log --since=2.years--> last two year log only.
+git log --since=2.weeks--> last two weeks log only.
+git log --pretty=format:"%h -- %an"--> this will give you git log with hash and author name only. 
+You can go to git documentation to get the list of all format available to use. Try it according to requirement.
