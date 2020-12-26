@@ -60,4 +60,5 @@ git log --since=2.weeks--> last two weeks log only.
 git log --pretty=format:"%h -- %an"--> this will give you git log with hash and author name only. 
 You can go to git documentation to get the list of all format available to use. Try it according to requirement.
 git restore --staged filename.txt--> to send file from staged to working dir/repo i.e unstagging the file.
-git checkout --filename--> to restore the file with their data of privious data.
+git checkout -- filename--> to restore the file with their data of privious data.
+git checkout -f --> to restore all the files of working dir to previous commit.
