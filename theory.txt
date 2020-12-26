@@ -45,3 +45,17 @@ git rm filenameWith Extension--> to remove the file and also adding them to staz
 git mv oldfilename newfilename--> rename the file and add to stagging area also. ready to commit
 git rm --cached filenamewithextension--> to make the file untrack. if you a file in .gitignore then make sure that is not track by git befor. if track then remove from tracking.
 tracking start once we put a file in staging area.
+git log -p--> logs with ditails of changes
+git log -p -2--> only two log with details of changes
+git log -2--> only two log 
+git log --stat-->logs with ditails of changes in short
+git log --pretty=oneline--> all hash value with commit message
+git log --pretty=short--> all hash value with commit message and author name
+git log --pretty=full-->all hash value with commit message and author name and who has done the commit.
+author is one who has creted the file and commit is one who has changed the file.
+git log --since=2.days--> last two days log only.
+git log --since=2.months--> last two months log only.
+git log --since=2.years--> last two year log only.
+git log --since=2.weeks--> last two weeks log only.
+git log --pretty=format:"%h -- %an"--> this will give you git log with hash and author name only. 
+You can go to git documentation to get the list of all format available to use. Try it according to requirement.
